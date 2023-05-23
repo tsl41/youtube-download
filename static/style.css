@@ -1,0 +1,143 @@
+body{
+
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-image: cover;
+
+}
+
+
+.search-area{
+
+    margin-top: 20%;
+}
+
+.search-area #search-box{
+    border-radius: 20px;
+    text-align: center;
+    border-color: blue
+}
+
+ 
+.intro-text{
+
+    font-family: serif;
+    font-size: 40px;
+}
+
+
+.intro-text {
+    display: inline-block;
+  }
+  
+  .intro-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+#navigate-button{
+
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+/* Footer styles */
+.dark-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.dark-footer h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.dark-footer p {
+  margin-bottom: 15px;
+}
+
+.dark-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dark-footer ul li {
+  margin-bottom: 10px;
+}
+
+.dark-footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dark-footer ul li a:hover {
+  color: #aaa;
+}
+
+.dark-footer .footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+}
+
+.dark-footer .footer-bottom p {
+  margin: 0;
+  color: #fff;
+}
+
+.dark-footer .social-media-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dark-footer .social-media-icons li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.dark-footer .social-media-icons li a:hover {
+  color: #aaa;
+}
+
+/* Additional styling for Font Awesome icons */
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+
+
+.loading-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
+}

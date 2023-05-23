@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-dark" style="background-color: #e3f2fd;" data-bs-theme="dark">
+            <form class="container-fluid justify-content-start">
+                <a href="/"><button type="button" class="btn btn-outline-danger">Home</button></a>
+               <span style="margin-left: 10px; color: white;">YouTube </span> 
+               <span style="color: red;">Download</span>
+            </form>
+          </nav>
+        </header>
+        <main class="mb-5">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ thumbnail_url }}" class="card-img-top" alt="thumbnail">
+                <div class="card-body">
+                  <h5 class="card-title">Details:</h5>
+                  <hr style="background-color: rgb(0, 81, 255); height: 3px; width: 70%;">
+                  <div style="font-family: sans-serif;">title: {{ page_title }} </div>
+                  <hr>
+                  <div style="font-family: sans-serif;">Size: {{ file_size }}MB</div>
+                  <a href="{{ download_url }}" class="btn btn-primary">Download</a>
+                </div>
+              </div>
+              
+        </main>
+        <footer class="dark-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>About</h4>
+                  <p>This website allows you to download YouTube videos in various formats. Enjoy your favorite videos offline!</p>
+                </div>
+                <div class="col-md-3">
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Download Instructions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h4>Contact Us</h4>
+                  <p>Email: contact@example.com</p>
+                  <p>Phone: +1-123-456-7890</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="text-center">&copy; 2023 YouTube Download. All rights reserved.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="social-media-icons">
+                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>            
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
